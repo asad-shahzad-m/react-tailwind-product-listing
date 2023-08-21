@@ -1,0 +1,123 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.product-grid {
+    @apply flex flex-wrap justify-around md:justify-between;
+}
+
+.product-card {
+    @apply basis-1/3 m-4 md:basis-1/5;
+}
+
+.product-card__image {
+    @apply aspect-square mb-4;
+}
+
+.product-card__image img {
+    @apply w-full h-full object-contain
+}
+
+.product-card__info {
+    @apply text-center
+}
+
+.product-card__info h4 {
+    @apply font-semibold hover:cursor-pointer
+}
+
+.product-card__info p {
+    @apply text-gray-500
+}
+
+.product-card__info span {
+    @apply text-black font-semibold
+}
+
+.header {
+    @apply p-8 text-2xl font-semibold;
+}
+
+.header .navbar {
+    @apply flex gap-4 justify-between;
+}
+
+.product {
+    @apply flex justify-center m-8;
+}
+
+.product__image {
+    @apply aspect-square flex-1;
+}
+
+.product__image img {
+    @apply w-full h-full object-contain;
+}
+
+.product__content {
+    @apply basis-3/5 p-8
+}
+
+.product__content > * {
+    @apply mb-2;
+}
+
+.product__content h4 {
+    @apply text-3xl font-semibold
+}
+
+.product__content p {
+    @apply w-3/4
+}
+
+.product__content > button {
+    @apply mt-4 bg-blue-700 text-white px-8 py-4 rounded-full hover:opacity-75
+}
+
+.cart-wrapper {
+    @apply m-4
+}
+
+.cart-wrapper > h2 {
+    @apply text-4xl font-semibold text-center mb-8
+}
+
+.cart {
+    @apply flex flex-col gap-8
+}
+
+.line-item {
+    @apply flex items-center
+}
+
+.item__image {
+    @apply aspect-square flex-1
+}
+
+.item__image img {
+    @apply w-full h-full object-contain
+}
+
+.item__content {
+    @apply basis-11/12
+}
+
+@keyframes spinner {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.loading-spinner {
+    width: 50px;
+    height: 50px;
+    border: 10px solid #f3f3f3; /* Light grey */
+    border-top: 10px solid #383636; /* Black */
+    border-radius: 50%;
+    animation: spinner 1.5s linear infinite;
+}
+.spinner-container {
+    @apply flex justify-center items-center h-[85vh]
+}
