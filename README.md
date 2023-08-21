@@ -1,4 +1,4 @@
-Preview: react-product-listing.surge.sh
+Preview: https://react-product-listing.surge.sh
 
 # React + Vite
 
